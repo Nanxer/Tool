@@ -7,14 +7,21 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f7f7f7;
+            background-color: #e6f7ff; /* 背景色为浅蓝色，给人清新之感 */
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .container {
             max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+            width: 90%;
+            background-color: #fff; /* 容器背景色为纯白色，与页面背景形成对比 */
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .header {
             text-align: center;
@@ -22,12 +29,13 @@
         }
         .header h1 {
             font-size: 36px;
-            color: #333;
+            color: #2a6d9d; /* 标题颜色为深蓝色，与背景色相呼应 */
             margin: 0;
+            font-weight: bold;
         }
         .header p {
             font-size: 18px;
-            color: #666;
+            color: #5c99c1; /* 文字颜色为浅蓝色，与标题颜色形成渐变效果 */
             margin-top: 10px;
         }
         .link-list {
@@ -38,45 +46,45 @@
             margin-bottom: 40px;
         }
         .link-item {
-            background-color: #fff;
-            border: 1px solid #ddd;
+            background-color: #d9f0ff; /* 链接项背景色为浅蓝色，与页面背景相融合 */
+            border: 1px solid #b3d9ff; /* 边框颜色为稍深的蓝色，增加层次感 */
             border-radius: 8px;
             overflow: hidden;
             width: calc(33.333% - 20px);
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
         }
         .link-item:hover {
             transform: translateY(-5px);
-        }
-        .link-item img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
         }
         .link-item-content {
-            padding: 20px;
+            padding: 30px;
+            text-align: center;
         }
         .link-item-content h2 {
             font-size: 24px;
-            color: #333;
+            color: #2a6d9d; /* 标题颜色与页面标题一致 */
             margin: 0 0 10px 0;
+            font-weight: bold;
         }
         .link-item-content p {
             font-size: 16px;
-            color: #666;
-            margin: 0 0 15px 0;
+            color: #5c99c1; /* 文字颜色与页面简介一致 */
+            margin: 0 0 20px 0;
         }
         .link-item-content a {
             display: inline-block;
-            background-color: #007bff;
+            background-color: #2a6d9d; /* 按钮背景色为深蓝色，与标题颜色呼应 */
             color: #fff;
-            padding: 10px 20px;
-            border-radius: 4px;
+            padding: 12px 24px;
+            border-radius: 6px;
             text-decoration: none;
-            transition: background-color 0.3s ease-in-out;
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
         }
         .link-item-content a:hover {
-            background-color: #0056b3;
+            background-color: #21527a; /* 鼠标悬停时按钮颜色更深，增强视觉效果 */
+            transform: scale(1.05);
         }
         @media (max-width: 768px) {
             .link-item {
@@ -92,12 +100,16 @@
 </head>
 <body>
     <div class="container">
+        <div class="header">
+            <h1>MyTools</h1>
+            <p>我的工具箱，为你提供实用的小工具。</p>
+        </div>
         <div class="link-list">
             <div class="link-item">
                 <div class="link-item-content">
                     <h2>阎王点名</h2>
                     <p>比较构式的txt点名，祝你好运</p>
-                    <a href="./dianming.html" target="_blank">---linking---</a>
+                    <a href="./dianming.html" target="_blank">立即体验</a>
                 </div>
             </div>
         </div>
