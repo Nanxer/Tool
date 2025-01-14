@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTools</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            font-size: 36px;
+            color: #333;
+            margin: 0;
+        }
+        .header p {
+            font-size: 18px;
+            color: #666;
+            margin-top: 10px;
+        }
+        .link-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .link-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            width: calc(33.333% - 20px);
+            transition: transform 0.3s ease-in-out;
+        }
+        .link-item:hover {
+            transform: translateY(-5px);
+        }
+        .link-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .link-item-content {
+            padding: 20px;
+        }
+        .link-item-content h2 {
+            font-size: 24px;
+            color: #333;
+            margin: 0 0 10px 0;
+        }
+        .link-item-content p {
+            font-size: 16px;
+            color: #666;
+            margin: 0 0 15px 0;
+        }
+        .link-item-content a {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .link-item-content a:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 768px) {
+            .link-item {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .link-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="link-list">
+            <div class="link-item">
+                <div class="link-item-content">
+                    <h2>阎王点名</h2>
+                    <p>比较构式的txt点名，祝你好运</p>
+                    <a href="./dianming.html" target="_blank">---linking---</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
